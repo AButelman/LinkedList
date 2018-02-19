@@ -1,5 +1,3 @@
-# README
-
 ## A Linked List data structure implemented in Java
 
 ## Available methods:
