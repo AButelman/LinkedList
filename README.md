@@ -11,14 +11,14 @@ remove(int index)
 
 removeLast()
 
-get(int index)
+Object get(int index)
 
-getLast()
+Object getLast()
 
-size()
+int size()
 
 clear()
 
 reverse()
 
-toString()
+String toString()
