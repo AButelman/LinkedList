@@ -238,6 +238,19 @@ public class UsesLinkedList {
 		System.out.println("Searching for the index number of an object with indexOf()...");
 		System.out.println("112323 is on index number " + list2.indexOf(new Integer(112323)) + "\n");
 		
+		System.out.println("Removing the subset 0-2 from the list...");
+		list2.removeSubSet(0, 2);
+		System.out.println(list2 + "\n");
+		
+		System.out.println("Copying the list to an Integer array...");
+		Integer[] intArray = new Integer[3];
+		list2.toArray(intArray);
+		System.out.println("Displaying the array: ");
+		for (Integer numb : intArray){
+			if (numb != null) { System.out.println("\t" + numb); }
+		}
+		
+		System.out.println();
 		System.out.println("Clearing the list...");
 		list2.clear();
 		System.out.println("List Size: " + list2.size() + " items\n");
