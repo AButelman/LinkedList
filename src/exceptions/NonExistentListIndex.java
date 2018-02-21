@@ -1,4 +1,4 @@
-package resources;
+package exceptions;
 
 public class NonExistentListIndex extends RuntimeException {
 
