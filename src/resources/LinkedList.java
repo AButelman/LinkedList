@@ -110,6 +110,28 @@ public class LinkedList<T> {
 		}
 	}
 	
+	// NEW METHOD, ORT
+	public void removeSubSet(int firstIndex, int lastIndex) {
+		if (firstIndex > lastIndex) {
+			int tempIndex = firstIndex;
+			firstIndex = lastIndex;
+			lastIndex = tempIndex;
+		}
+
+		for (int i = firstIndex; i <= lastIndex; i++){
+			remove(i);
+		}
+	}
+
+	// NEW METHOD, ORT
+	public void toArray(T[] array) throws ArrayNotLargeEnough{
+		if (array.length > size()) { throw ArrayNotLargeEnough(size() - array.length); }
+		
+		for (int i = 0; i < size(); i++){
+			array[i] = get(i);
+		}
+	}
+	
 	// Returns the object stored at the specified index number
 	public T get(int index) throws NonExistentListIndex{
 		if (firstNode == null) { throw new NonExistentListIndex(0); }
